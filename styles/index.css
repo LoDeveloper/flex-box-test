@@ -1,12 +1,12 @@
 
 body {
-    margin: 20;
+    margin: 90px;
+    padding: 98px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: column;
-    gap: 20px;
     background-color:#ffc363;
 }
 
@@ -22,8 +22,6 @@ body {
 
 .square {
     display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
     margin: 10px;
     padding: 10px;
     width: 78px;
@@ -31,14 +29,26 @@ body {
     background-color: #cd86e3;
 }
 
-
-.container--2 {
-    justify-content: center;
+.container--1 {
+    justify-content: flex-start;
     align-items: end;
 }
 
-.container--3 {
-    justify-content: space-around;
-    align-items: flex-end;
+.container--2 {
+    justify-content: center;
+    align-items: stretch;
 }
 
+.container--3 {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container--4 {
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.square--down {
+    align-self: baseline;
+}
