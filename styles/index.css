@@ -24,14 +24,17 @@ body {
     display: flex;
     margin: 10px;
     padding: 10px;
-    width: 78px;
-    height: 78px;
     background-color: #cd86e3;
 }
 
 .container--1 {
     justify-content: flex-start;
-    align-items: end;
+    align-items: flex-end;
+}
+
+.square--1 {
+    height: 78px;
+    width: 78px;
 }
 
 .container--2 {
@@ -39,10 +42,15 @@ body {
     align-items: stretch;
 }
 
+.square--2 {
+    width: 78px;
+}
+
 .container--3 {
     justify-content: flex-end;
     align-items: center;
 }
+
 
 .container--4 {
     justify-content: space-around;
@@ -50,5 +58,12 @@ body {
 }
 
 .square--down {
-    align-self: baseline;
+    align-self: flex-end;
+    height: 78px;
+    width: 78px;
+}
+
+.container--5 {
+    justify-content: space-between;
+    align-items: stretch;
 }
